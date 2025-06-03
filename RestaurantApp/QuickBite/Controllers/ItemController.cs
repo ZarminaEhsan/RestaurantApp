@@ -5,7 +5,7 @@ namespace QuickBite.Controllers
 {
     public class ItemController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Table()
         {
             var items = new List<Item>();
             
@@ -15,11 +15,11 @@ namespace QuickBite.Controllers
             item1.Price = 60;
 
             //another way to do same as above, but this is preferable
-            var item2 = new Item();
+            var item2 = new Item
             {
                 ItemId = 2,
                 Name = "Fried Chicken Leg",
-                Price = 60;
+                Price = 15
             };
 
             items.Add(item1);
