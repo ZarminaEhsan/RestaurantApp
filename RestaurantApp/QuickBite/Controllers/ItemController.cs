@@ -14,7 +14,7 @@ namespace QuickBite.Controllers
             item1.Name = "Pizza";
             item1.Price = 60;
 
-            //another way to do same as above, but this is preferable
+            //another way to do the same as above, but this is preferable
             var item2 = new Item
             {
                 ItemId = 2,
@@ -30,3 +30,4 @@ namespace QuickBite.Controllers
         }
     }
 }
+
